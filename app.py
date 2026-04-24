@@ -155,13 +155,8 @@ def kpi_card(title, value, subtitle, color, icon):
 
 # ── Section header HTML ────────────────────────────────────
 def section_header(title, subtitle=""):
-    return f"""
-    <div style="margin: 8px 0 20px 0;">
-        <div style="font-size:16px; font-weight:600; color:#ffffff;">{title}</div>
-        {"<div style='font-size:13px; color:#8b949e; margin-top:2px;'>" + subtitle + "</div>" if subtitle else ""}
-        <div style="height:2px; background:linear-gradient(90deg,#58a6ff,transparent);
-                    margin-top:8px; border-radius:2px;"></div>
-    </div>"""
+    sub = f"<div style='font-size:13px;color:#8b949e;margin-top:2px;'>{subtitle}</div>" if subtitle else ""
+    return f"<div style='margin:8px 0 20px 0;'><div style='font-size:16px;font-weight:600;color:#ffffff;'>{title}</div>{sub}<div style='height:2px;background:#58a6ff;margin-top:8px;border-radius:2px;opacity:0.5;'></div></div>"
 
 # ── App header ─────────────────────────────────────────────
 st.markdown("""
