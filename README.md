@@ -63,7 +63,8 @@ diabetes-readmission-predictor/
 │   └── feature_names.pkl      ← Feature column names
 │
 ├── 🖼️ assets/                  ← All EDA & model visualisation charts
-├── 📋 reports/                 ← Project analysis report
+📋 reports/
+   └── REPORT.md    ← Full analytics report
 ├── app.py                      ← Streamlit application
 ├── requirements.txt            ← Dependencies
 └── README.md
